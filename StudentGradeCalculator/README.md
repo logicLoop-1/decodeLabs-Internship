@@ -2,22 +2,17 @@
 
 A simple Java console application that calculates a student's total marks, average, and letter grade based on scores entered for multiple subjects.
 
-## Features
+## About
 
-- Accepts a student's name and marks for any number of subjects
-- Calculates:
-  - **Total marks**
-  - **Average marks**
-  - **Letter grade** (based on average)
-- Displays a clean summary report
+The program takes marks for one or more subjects, computes the total and average, and assigns a grade based on standard grading criteria.It demonstrates core Java fundamentals such as variables, conditional statements, loops, arrays/collections, and basic input handling.
 
-## Project Structure
+## How it works
 
-```
-StudentGradeCalculator/
-├── Main.java      # Entry point; handles user input and prints the report
-└── Student.java   # Student class; stores data and computes total/average/grade
-```
+1. Input — The user is prompted to enter the number of subjects and the marks obtained in each one.
+2. Validation — The program checks that each mark entered is within a valid range (e.g., 0–100), re-prompting if invalid input is given.
+3. Calculation — The total marks are summed and the average is calculated by dividing by the number of subjects.
+4. Grading — Based on the average, the program assigns a grade using a set of conditional checks against grade boundaries.
+5. Output — The program displays the total, average, and final grade to the user.
 
 ## Grading Scale
 
@@ -34,27 +29,6 @@ StudentGradeCalculator/
 | 55 – 59.99    | C-    |
 | Below 55      | F     |
 
-## Requirements
-
-- Java Development Kit (JDK) 8 or higher
-
-## How to Compile and Run
-
-1. Clone or download this repository.
-2. Open a terminal in the project folder.
-3. Compile the source files:
-
-   ```bash
-   javac -d out StudentGradeCalculator/Main.java StudentGradeCalculator/Student.java
-   ```
-
-   (Adjust paths as needed based on how your files are organized locally.)
-
-4. Run the program:
-
-   ```bash
-   java -cp out StudentGradeCalculator.Main
-   ```
 
 ## Sample Usage
 
@@ -76,13 +50,3 @@ total marks: 259
 Average: 86.33333333333333
 Grade: A
 ```
-
-## Notes / Possible Improvements
-
-- Input validation could be added (e.g., rejecting marks outside 0–100 or non-numeric input).
-- The average could be formatted to a fixed number of decimal places for cleaner output.
-- Subject names could be tracked alongside marks for a more detailed report.
-
-## License
-
-This project is free to use and modify for learning purposes.
