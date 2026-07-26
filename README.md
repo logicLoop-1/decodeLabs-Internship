@@ -7,6 +7,7 @@ This repository contains projects completed during my internship at decodeLabs.
 | Project | Description |
 |---|---|
 | [Number Guessing Game](./NumberGame) | Console game where user guesses a random number |
-| [Student Grade Calculator](./StudentGradeCalculator) | console application that calculates student's grades |
+| [Student Grade Calculator](./StudentGradeCalculator) | Console application that calculates student's grades |
+| [ATM Interface](./ATMInterface) | Console based ATM simulator that authenticates with PIN, checks balance, deposit and withdraw money |
 
 More projects will be added here as I complete them.
